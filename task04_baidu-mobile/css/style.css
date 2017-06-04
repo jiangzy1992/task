@@ -1,0 +1,154 @@
+﻿body{
+    font: 12px arial;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+/*把移动端的页面隐藏掉*/
+#container{
+    display: none;
+}
+
+
+
+
+/*整个页面*/
+#wrapper{
+    position: relative;
+    min-height: 550px;
+    min-width: 550px;
+    padding-bottom: 100px;
+    zoom:100%;
+}
+/*所有a标签鼠标覆盖时变手型*/
+a:hover{
+    cursor: pointer;
+}
+
+a:visited{
+    color: #000;
+}
+/*头部*/
+.header{
+    display: inline-block;
+    float: left;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 19px 15px 5px 0;
+}
+/*导航栏初始状态和被访问过的颜色*/
+.header a:link,.nav:visited{
+    color: black;
+}
+/*鼠标在上的颜色*/
+.header a:hover{
+    color: blue;
+}
+/*导航栏块与块的间距*/
+.header a{
+    margin-left: 20px;
+}
+/*按钮与a标签的间距*/
+.header input{
+    margin-left: 20px;
+}
+/*部分字体粗体*/
+.nav_font{
+    font-weight: bold;
+}
+/*导航栏右方按钮*/
+.btn1{
+    width: 70px;
+    height: 24px;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    /*字间距*/
+    letter-spacing: 1px;
+    background-color: #1E90FF;
+    border: 1px solid #1E90FF;
+}
+/*身体部分*/
+.main{
+    padding-top: 8%;
+    text-align: center;
+}
+/*中间百度的图片*/
+.pic{
+    margin-bottom: 30px;
+}
+/*搜索输入框*/
+.text{
+    width: 538px;
+    height: 32px;
+    border: 1px solid #cccccc;
+    padding-left: 10px;
+    padding-top: 10px\9;
+    height: 23px\9;
+    +margin-bottom: 1px;
+    margin-left: -50px;
+}
+/*鼠标覆盖输入框*/
+.text:hover{
+    border: 1px solid #888;
+}
+
+.text:focus{
+    border: 1px solid #1E90FF;
+}
+/*百度一下按钮*/
+.btn2{
+    width: 100px;
+    height: 36px;
+    color: white;
+    font-size: 15px;
+    margin-left: -3px\9;
+    position: absolute;
+    /*字间距*/
+    letter-spacing: 1px;
+    background-color: #1E90FF;
+    border: 1px solid #1E90FF;
+}
+/*鼠标覆盖按钮*/
+.btn2:hover{
+    background-color: #2879ff;
+    box-shadow: 1px 1px 1px #ccc;
+    cursor: pointer;
+}
+/*脚部*/
+.footer{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    bottom: 44px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: absolute;
+    /*+margin: 0 auto 0 -710px;*/
+}
+/*about部分的块间距*/
+.about a{
+    margin-left: 10px;
+}
+/*about初始以及点击过后的颜色*/
+.about a:link,.about a:visited{
+    color: blue;
+}
+/*版权链接颜色*/
+.foot_text:link{
+    color: #666;
+}
+
+
+.colorChange{float: left;  margin: 5px 70px 0 0;}
+.box-color{display: inline-block;  width: 14px;  height: 14px;  border: 1px solid #ccc;  outline: none;}
+.box-color:nth-child(1){background: #fff;}
+.box-color:nth-child(2){background: #1E90FF;}
+.box-color:nth-child(3){background: #ba349e;}
+.box-color:nth-child(4){background: #ff283a;}
+.box-color:nth-child(5){background: #58ff2d;}
+#save{outline: none;border: 1px solid #ccc;}

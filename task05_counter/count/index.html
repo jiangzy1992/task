@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>计算器</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="calculator">
+    <div id="calcu-head"><p>计算器</p></div>
+    <form name="calculator" action="" method="get">
+        <div id="calcu-screen">
+            <input type="text" name="numScreen" class="screen" value="0" onfocus="this.blur();" />
+        </div>
+        <div id="calcu-btn">
+            <ul>
+                <li onclick="sin()">sin</li>
+                <li onclick="cos()">cos</li>
+                <li onclick="del()">←</li>
+                <li onclick="clearscreen()" style="width: 74px">C</li>
+                <li onclick="pAndN()">+/-</li>
+                <li onclick="sqrt()">√</li>
+                <li onclick="tan()">tan</li>
+                <li onclick="command(parseInt(Math.random()*100))">随机</li>
+                <li onclick="command(7)">7</li>
+                <li onclick="command(8)">8</li>
+                <li onclick="command(9)">9</li>
+                <li onclick="divide()">÷</li>
+                <li onclick="present()">%</li>
+                <li onclick="log()">log</li>
+                <li onclick="lg()">lg</li>
+                <li onclick="command(4)">4</li>
+                <li onclick="command(5)">5</li>
+                <li onclick="command(6)">6</li>
+                <li onclick="times()">×</li>
+                <li onclick="overX()">1/x</li>
+                <li onclick="pow2()">X<sup>2</sup></li>
+                <li onclick="pow10()">10<sup>x</sup></li>
+                <li onclick="command(1)">1</li>
+                <li onclick="command(2)">2</li>
+                <li onclick="command(3)">3</li>
+                <li onclick="minus()">-</li>
+                <li onclick="equal()">=</li>
+                <li onclick="command(Math.PI)">π</li>
+                <li onclick="command(Math.E)">e</li>
+                <li onclick="command(0)" style="width: 74px">0</li>
+                <li onclick="dot()">.</li>
+                <li onclick="plus()">+</li>
+                <li  onclick="copyright()">^-^</li>
+            </ul>
+        </div>
+        <div id="calcu-foot">
+            <span id="note">&nbsp;</span>
+        </div>
+    </form>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html> 

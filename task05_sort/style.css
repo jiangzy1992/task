@@ -1,0 +1,29 @@
+body{
+    background: #4192cd;
+    text-align: center;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -200px 0 0 -200px;
+    width: 400px;
+    height: 250px;
+    background: rgba(255,255,255,.5);
+    border: 1px solid #4192cd;
+    border-radius: 5%;
+}
+
+input{
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    background-color: #1851cd;
+    color: #fff;
+    margin-top: 60px;
+}
+
+input:hover{
+    background-color: #0f1fcd;
+}

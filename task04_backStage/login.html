@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>登录界面</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div id="login">
+            <form id="form" onsubmit="return submitB()">
+                <div id="portrait"><i class="icon_top icon-user"></i></div>
+                <i class="icon icon-user"><span id="blank">|</span></i>
+                <input class="user" id="user" type="text" placeholder="请输入用户名" onblur="checkUser()">
+                <span id="user_pass"></span>
+                <br/>
+                <i class="icon icon-key">|</i>
+                <input class="user" id="pwd" type="password" placeholder="请输入密码" onblur="checkPwd()">
+                <span id="pwd_pass"></span>
+                <br/>
+            </form>
+            <input class="submit" type="submit" value="登录">
+        </div>
+    </div>
+</body>
+</html>

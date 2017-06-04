@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+body,html{
+    background: url("../images/bg03.jpg");
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: "微软雅黑";
+}
+
+#login{
+    width: 400px;
+    height: 350px;
+    position: absolute;
+    border: 2px solid rgba(255,255,255,.3);
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: 0 0 50px rgba(255,255,255,.3);
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -220px;
+}
+
+
+
+/*================form表单=====================*/
+
+#form{
+    margin-top: 104px;
+    margin-left: 60px;
+}
+
+/*头像区域*/
+#portrait{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,.3);
+    background-color: rgb(4, 134, 160);
+    box-shadow: 0 0 50px rgba(255,255,255,.3);
+    margin-left: 65px;
+    margin-top: -150px;
+}
+
+.icon_top{
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 40px;
+    font-size: 90px;
+    color: #ccc;
+}
+
+/*两个输入框*/
+.user{
+    width: 240px;
+    height: 44px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.3);
+    background-color: rgba(224, 227, 232, 0.11);
+    padding-left: 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    outline: none;
+}
+
+#blank{
+    margin-left: 4px;
+}
+
+.user:hover{
+    background-color: rgba(136, 136, 136, 0.11);
+}
+
+.user:focus{
+    background-color: rgba(170, 170, 170, 0.4);
+    box-shadow: 0 0 5px rgba(241, 237, 239, 0.35);
+}
+/*内存字体样式*/
+.user::-webkit-input-placeholder{
+    color: #cccccc;
+}
+
+.submit{
+    width: 400px;
+    height: 60px;
+    border-radius: 0 0 20px 20px;
+    background-color: rgba(4, 134, 160,0.8);
+    border: 1px solid transparent;
+    border-top: 2px solid rgba(255,255,255,.3);
+    outline: none;
+    color: #ccc;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.submit:hover{
+    background-color: rgba(4, 134, 160, 0.6);
+    box-shadow: 0 0 5px rgba(4, 134, 160, 0.5);
+}
+
+.submit:active{
+    background-color: rgb(4, 134, 160);
+}
+/*================form表单 end=====================*/

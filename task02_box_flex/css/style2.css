@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*盒子模型*/
+.content{
+    width: 100px;
+    height: 100px;
+    background-color: #8d94ff;
+}
+
+.padding{
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border: 5px solid #ff00c9;
+}
+
+.margin{
+    margin: 100px;
+    width: 130px;
+    height: 130px;
+    background-color: #fff400;
+}
+/*怪异盒子模型*/
+.m_content{
+    width: 100px;
+    height: 100px;
+    background-color: #8d94ff;
+}
+
+.m_padding{
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+    box-sizing: border-box;
+    background-color: aquamarine;
+    border: 5px solid #ff00c9;
+}
+
+.m_margin{
+    margin: 100px;
+    width: 130px;
+    height: 130px;
+    background-color: #fff400;
+}

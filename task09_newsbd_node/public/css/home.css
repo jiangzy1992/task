@@ -1,0 +1,47 @@
+.container{
+    width: 900px;
+    padding: 0;
+}
+
+.nav{
+    margin-bottom: 50px;
+}
+
+.tab{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.addForm{
+    display: none;
+    margin-bottom: 30px;
+}
+
+.updateForm{
+    display: none;
+    margin-bottom: 30px;
+}
+
+.con_out{
+    display: none;
+}
+
+.table thead tr th{
+	text-align: center;
+}
+
+.table #id{
+	width: 74px;
+}
+
+.table #operate{
+	width: 80px;
+}
+
+.newsid{
+	text-align: center;
+}
+
+.update{
+    margin-left: 6px;
+}

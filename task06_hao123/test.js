@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $("button").click(function(){
+        $(".d1").animate({
+            top:'100px'
+        },1000);
+        $(".d2").animate({
+            top:'100px'
+        },1000);
+    })
+});

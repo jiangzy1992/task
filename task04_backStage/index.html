@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台登录系统</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container1">
+        <!-- 头部 -->
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">后台管理系统</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li role="presentation" class="active"><a href="#">首页</a></li>
+                        <li role="presentation"><a href="#">菜单栏1</a></li>
+                        <li role="presentation"><a href="#">菜单栏2</a></li>
+                        <li role="presentation"><a href="#">菜单栏3</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="搜索人/号码/编码/部门">
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="搜索">
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <div id="login">
+                            <span>你好，
+                                <a href="#">请登录。</a>
+                                <a href="#">注册&nbsp;</a>
+                                <a href="#">注销</a>
+                            </span>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- 左侧导航栏 -->
+        <div class="row">
+            <nav class="col-md-2" id="leftMenu">
+                <ul>
+                    <li>
+                        <a class="list list1">全局设置</a>
+                        <div class="menu_list menu_list_first">
+                            <a href="#">基本设置</a>
+                            <a href="#">其他设置</a>
+                            <a href="#">界面风格</a>
+                            <a href="#">系统工具</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="list list2">权限管理</a>
+                        <div class="menu_list">
+                            <a href="#">基本权限</a>
+                            <a href="#">分配权限</a>
+                            <a href="#">权限管理</a>
+                            <a href="#">成员管理</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="list list3">新闻管理</a>
+                        <div class="menu_list">
+                            <a href="#">新闻中心</a>
+                            <a href="#">添加新闻</a>
+                            <a href="#">修改新闻</a>
+                            <a href="#">删除新闻</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="list list3">新闻管理</a>
+                        <div class="menu_list">
+                            <a href="#">新闻中心</a>
+                            <a href="#">添加新闻</a>
+                            <a href="#">修改新闻</a>
+                            <a href="#">删除新闻</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 第一模块 -->
+            <div class="col-md-9 col-md-offset-3 main">
+                <div class="title">
+                    <h3>管理控制台</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">最新提醒</div>
+                            <div class="panel-body">
+                                <div class="alert alert-success" role="alert">
+                                    <strong>注意!</strong> 你早上要去跑步~
+                                </div>
+                                <div class="alert alert-warning" role="alert">
+                                    <strong>注意!</strong> 你少玩点游戏咯。
+                                </div>
+                                <div class="alert alert-danger" role="alert">
+                                    <strong>注意!</strong> 你明天要交作业啦！
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二模块 -->
+                    <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">我的任务</div>
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-info">3D魔方<span class="badge">0</span></li>
+                                </ul>
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-warning">简笔画动画<span class="badge">1</span></li>
+                                </ul>
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-danger">CSS Hack<span class="badge">2</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 重构栅格 第三模块 -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">最新信息</div>
+                            <div class="panel-body">
+                                <table class="table table-hover">
+                                    <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>作业</th>
+                                        <th>所用次数</th>
+                                        <th>分数</th>
+                                        <th>批改老师</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>3D魔方</td>
+                                        <td>1</td>
+                                        <td>95</td>
+                                        <td>曾老师</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>简笔画</td>
+                                        <td>1</td>
+                                        <td>98</td>
+                                        <td>方老师</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>CSS Hack</td>
+                                        <td>1</td>
+                                        <td>100</td>
+                                        <td>许老师</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <button type="button" class="btn btn-primary">查看详情 >></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第四模块 -->
+                    <div class="col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">作业进度</div>
+                            <div class="panel-body">
+                                <label class="label label-primary">3D魔方</label>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                        <span class="sr-only">80% Complete</span>
+                                    </div>
+                                </div>
+                                <label class="label label-danger">简笔画</label>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                        <span class="sr-only">60% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

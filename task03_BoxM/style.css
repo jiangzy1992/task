@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.top{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+.top_content{
+    width: 75%;
+    height: 50px;
+    margin: 0px auto;
+    background-color: wheat;
+}
+.body{
+    width: 80%;
+    margin: 20px auto;
+    height: 1500px;
+    background-color: blueviolet;
+}
+.body_img{
+    width: 100%;
+    height: 300px;
+    background-color: gray;
+}
+.body_content{
+    width: 100%;
+    height: 1150px;
+    background-color: aqua;
+}
+.body_no{
+    width: auto;
+    height: 50px;
+    background-color: red;
+}
+.footing{
+    margin: 0px auto;
+    width: 75%;
+    height: 400px;
+    background-color: green;
+}
+.footing_content{
+    width: 100%;
+    height: 300px;
+    background-color: yellow;
+}
+.footing_menu{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}

@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, b, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font: 12px arial,宋体,sans-serif;
+}
+
+body{
+    padding: 0 20px;
+}
+
+.wrapper{
+    position: relative;
+}
+
+.btn-area{
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 2;
+}
+
+.btn-area a,.collect,.download{
+    background-image: url("imgs/channel-btn.png");
+    background-repeat: no-repeat;
+}
+
+.btn-area a{
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    padding: 0 6px 0 4px;
+    margin-left: 4px;
+    position: relative;
+    float: right;
+    color: #000;
+    overflow: hidden;
+    border-radius: 3px;
+    background-position: -43px -224px;
+}
+
+
+.btn-content{
+    display: inline-block;
+    padding-left: 23px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.download{
+    background-position: -114px -257px;
+}
+
+.btn-area a:hover{
+    background-position: -101px -224px;
+}
+
+.collect{
+    background-position: -3px -257px;
+}
+
+body{
+    background-color: #fcfcfc;
+}
+
+.container{
+    position: relative;
+    float: left;
+    box-shadow: 0 0 3px #ccc;
+    margin: 0 15px 0 0;
+}
+
+.box img{
+    width: 233px;
+}
+
+.resume{
+    padding: 12px;
+    line-height: 20px;
+}
+
+.resume span{
+    color: #888;
+}
+
+.resume a{
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    color: #333;
+    text-decoration: none;
+    padding: 2px 4px;
+    display: inline-block;
+    border-radius: 3px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.resume a:hover{
+    background-color: #e44737;
+    color: #fff;
+}

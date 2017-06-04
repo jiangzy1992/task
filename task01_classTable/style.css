@@ -1,0 +1,51 @@
+.classTable{
+    /*background-color: aqua;*/
+    margin: 0 auto;
+    width: 900px;
+    height: 500px;
+    margin-top: 12%;
+    position: relative;
+    -webkit-border-image: url("images/note.jpg") 0 0 0 0;
+    -moz-border-image: url("images/note.jpg");
+}
+
+.tab1{
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 190px;
+    border-color: black;
+    background-color: #e8f3ff;
+    border-collapse: collapse;
+}
+
+td{
+    text-align: center;
+}
+
+.std{
+    background-color: #fff4c4;
+}
+
+.relax{
+    background-image: url('images/sun.jpg');
+}
+
+.mon{
+    background-color: pink;
+}
+
+.tue{
+    background-color: darkseagreen
+}
+
+.wed{
+    background-color: mediumpurple;
+}
+
+.thu{
+    background-color: orangered;
+}
+
+.fri{
+    background-color: cornflowerblue;
+}

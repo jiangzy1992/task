@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title><%=title%></title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/css/home.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <ul id="ul" class="nav nav-pills">
+            <li class="active" id="a1"><a href="#">新闻列表</a></li>
+            <li><a href="#" id="a2">添加新闻</a></li>
+        </ul>
+
+        <form class="addForm" action="/add">
+            <div class="form-group">
+                <label for="addTitle">新闻标题</label>
+                <input type="text" id="addTitle" class="form-control" placeholder="新闻标题" name="newstitle"></input>
+            </div>
+            <div class="form-group">
+                <label for="addContent">新闻内容</label>
+                <input type="text" id="addContent" class="form-control" placeholder="新闻内容" name="newscontent"></input>
+            </div>
+            <div class="form-group">
+                <label for="addCat">新闻分类</label>
+                <input type="text" id="addCat" class="form-control" placeholder="新闻分类" name="cat"></input>
+            </div>
+            <input type="hidden" class="addcsrf" name="_csrf" value="<%= csrfToken %>"></input>
+            <button type="button" id="addSubmit" class="btn btn-primary">提交</button>
+        </form>
+
+        <form class="updateForm">
+            <div class="form-group">
+                <label for="updateId">新闻序号</label>
+                <input type="text" id="updateId" class="form-control" name="id" disabled="disabled"></input>
+            </div>
+            <div class="form-group">
+                <label for="updateTitle">新闻标题</label>
+                <input type="text" id="updateTitle" class="form-control" placeholder="新闻标题" name="newstitle"></input>
+            </div>
+            <div class="form-group">
+                <label for="updateContent">新闻内容</label>
+                <input type="text" id="updateContent" class="form-control" placeholder="新闻内容" name="newscontent"></input>
+            </div>
+            <input type="hidden" class="updcsrf" name="_csrf" value="<%= csrfToken %>"></input>
+            <button type="button" id="updateSubmit" class="btn btn-primary">提交</button>
+        </form>
+
+        <!-- 新闻列表 -->
+        <div class="content tab">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th id="id">新闻序号</th>
+                    <th id="title">新闻标题</th>
+                    <th id="content">新闻内容</th>
+                    <th id="operate">操作</th>
+                </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen and (min-width:769px)">
+    <link rel="stylesheet" type="text/css" href="css/m_baidu.css" media="screen and (max-width:768px)">
+</head>
+<body>
+
+    <!-- PC端的页面-->
+
+    <div id="wrapper">
+        <!--头部导航栏-->
+        <div class="header">
+            <a href="http://news.baidu.com/" class="nav_font" target="_blank">新闻</a>
+            <a href="http://www.hao123.com/" class="nav_font" target="_blank">hao123</a>
+            <a href="http://map.baidu.com/" class="nav_font" target="_blank">地图</a>
+            <a href="http://v.baidu.com/" class="nav_font" target="_blank">视频</a>
+            <a href="http://tieba.baidu.com/" class="nav_font" target="_blank">贴吧</a>
+            <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F">登录</a>
+            <a href="http://www.baidu.com/gaoji/preferences.html">设置</a>
+            <input type="button" value="更多产品" class="btn1">
+        </div>
+        <!--body-->
+        <div class="main">
+            <div class="pic">
+                <img src="img/bd_logo1.png" width="270" height="129">
+            </div>
+            <form class="search">
+                    <span>
+                        <input type="text" class="text" autofocus>
+                    </span>
+                    <span>
+                        <input type="submit" value="百度一下" class="btn2">
+                    </span>
+            </form>
+        </div>
+        <!--脚部，关于，版权等-->
+        <div class="footer">
+            <p class="about">
+                <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为首页</a>
+                <a href="http://home.baidu.com/">关于百度</a>
+                <a href="http://ir.baidu.com/">About baidu</a>
+            </p>
+            <p class="copyright">
+                <span>©2015 Baidu</span>
+                <a href="http://www.baidu.com/duty/" class="foot_text">使用百度前必读</a>
+                <a href="http://jianyi.baidu.com/" class="foot_text">意见反馈</a>
+                <span>京ICP证030173号</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- 移动端的页面-->
+
+    <div id="container">
+        <header>
+            <div class="weather-wrapper">
+                <div class="weather">
+                    <div>27°</div>
+                    <div><i class="icon-cloud"></i></div>
+                    <div class="weather-status">
+                        <p>佛山</p>
+                        <p>空气&nbsp;70</p>
+                    </div>
+                    <i class="icon-chevron-down"></i>
+                </div>
+            </div>
+            <a id="login" href="#"><i class="icon-user"></i></a>
+        </header>
+        <div id="logo">
+            <img src="img/plus_logo.png" width="175" height="55" alt="百度一下">
+        </div>
+        <form id="search">
+            <div class="search-wrap">
+                <input type="text" id="search-text">
+                <div class="search-inner">
+                    <div id="call">
+                        <i class="icon-microphone"></i>
+                        <i class="icon-caret-down"></i>
+                    </div>
+                    <input type="submit" id="submit" value="百度一下">
+                </div>
+            </div>
+        </form>
+        <nav>
+            <a href="#"><i class="icon-list-alt"></i><br/>新闻</a>
+            <a href="#"><i class="icon-columns"></i><br/>小说</a>
+            <a href="#"><i class="icon-film"></i><br/>视频</a>
+            <a href="#"><i class="icon-gg"></i><br/>生活</a>
+            <a href="#"><i class="icon-map-marker"></i><br/>地图</a>
+            <a href="#"><i class="icon-arrow-circle-o-down"></i><br/>更多</a>
+        </nav>
+        <div class="main">
+            <div class="plus" id="usual">
+                <div class="plus-title">
+                    <div class="normal-title">
+                        <i class="icon-globe"></i>
+                        <h2>常用网址</h2>
+                    </div>
+                    <i class="icon-chevron-circle-down edit"></i>
+                </div>
+                <div class="plus-content" id="nav-list">
+                    <a href="#" class="circle"><span>贴吧</span></a>
+                    <a href="#"><span>hao123</span></a>
+                    <a href="#"><span>地图</span></a>
+                    <a href="#"><span>百度VIP</span></a>
+                    <a href="#"><span>图片</span></a>
+                    <a href="#"><span>音乐</span></a>
+                    <a href="#"><span>百度糯米</span></a>
+                    <a href="#"><i class="icon-plus"></i></a>
+                </div>
+            </div>
+            <div class="plus" id="hotword">
+                <div class="plus-title">
+                    <div class="normal-title">
+                        <i class="icon-list"></i>
+                        <h2>实时热点</h2>
+                        <span class="refresh">
+                            <i class="icon-repeat"></i>
+                            换一批
+                        </span>
+                    </div>
+                    <i class="icon-chevron-circle-down edit"></i>
+                </div>
+                <ul class="plus-content" id="hotword-list">
+                    <li class="circle"><a href="#">LOLs5抽签</a></li>
+                    <li class="circle"><a href="#">胡军与女儿亲吻</a></li>
+                    <li class="circle"><a href="#" >周星驰对谈撒贝宁</a></li>
+                    <li><a href="#">周杰伦头长草卖萌</a></li>
+                    <li><a href="#">杭州出租车改革</a></li>
+                    <li><a href="#">大别山现绿太阳鱼</a></li>
+                </ul>
+            </div>
+            <div class="plus" id="lbs">
+                <div class="plus-title">
+                    <div class="normal-title">
+                        <i class="icon-map-marker1"></i>
+                        <h2>生活服务</h2>
+                    </div>
+                    <i class="icon-chevron-circle-down edit"></i>
+                </div>
+                <div class="plus-content">
+                    <div class="gps-zone">
+                        <div class="gps-info">
+                            <p>点击定位，查看附近位置信息</p>
+                        </div>
+                        <button><i class="icon-crosshairs"></i>定位</button>
+                    </div>
+                    <ul id="lbs-list">
+                        <li><a href="#">
+                            <div id="film"><i class="icon-video-camera"></i></div>
+                            <p>电影</p>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="groupon"><i class="icon-shopping-cart"></i></div>
+                            <p>团购</p>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="takeout"><i class="icon-cutlery"></i></div>
+                            <p>外卖</p>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="taxi"><i class="icon-bell-o"></i></div>
+                            <p>打车</p>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="hotel"><i class="icon-building-o"></i></div>
+                            <p>酒店</p>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="food"><i class="icon-coffee"></i></div>
+                            <p>美食</p>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="ktv"><i class="icon-music"></i></div>
+                            <p>KTV</p>
+                        </a></li>
+                        <li><a href="#">
+                            <div id="bank"><i class="icon-cny"></i></div>
+                            <p>银行</p>
+                        </a></li>
+                    </ul>
+                    <div class="plus-control">
+                        <span class="prompt">展示全部</span>
+                        <i class="icon-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="plus" id="movie">
+                <div class="plus-title">
+                    <div class="normal-title">
+                        <i class="icon-money"></i>
+                        <h2>电影票</h2>
+                        <span class="refresh">
+                            <i class="icon-repeat"></i>
+                            换一部
+                        </span>
+                    </div>
+                    <i class="icon-chevron-circle-down edit"></i>
+                </div>
+                <div class="plus-content">
+                    <a href="#" class="movie-container">
+                        <div class="movie-poster"></div>
+                        <div class="movie-info">
+                            <div class="movie-title">
+                                <h3>小黄人大眼萌</h3>
+                                <span class="movie-version imax3d">
+                                    IMAX
+                                </span>
+                            </div>
+                            <div class="movie-status">
+                                <span class="movie-rank">8.2</span>
+                                <span class="movie-genre">动画</span>
+                                <span class="movie-genre">喜剧</span>
+                                <span class="movie-genre">家庭</span>
+                            </div>
+                            <p class="movie-abstract"><神偷奶爸>系列的犀利前传</p>
+                            <button class="movie-buyBtn">立即购票</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="plus" id="admin">
+                <i class="icon-cog"></i>管理我的首页
+            </div>
+        </div>
+        <div class="bottom">
+            <ul class="extend">
+                <li><a href="#">
+                    <i class="icon-gamepad"></i>
+                    百度浏览器，上网提速200%
+                    <i class="icon-chevron-right"></i>
+                </a></li>
+                <li><a href="#">
+                    <i class="icon-paw"></i>
+                    手机百度，最省流量的极速搜索APP
+                    <i class="icon-chevron-right"></i>
+                </a></li>
+                <li><a href="#">
+                    <i class="icon-gamepad"></i>
+                    百度推广，让有需求的客户找到你
+                    <i class="icon-chevron-right"></i>
+                </a></li>
+            </ul>
+            <div id="foot">
+                <div>
+                    <a href="#">极速版</a>
+                    <a href="#">用户反馈</a>
+                </div>
+                <a id="copyright" href="#">使用百度前必读&nbsp;Baidu&nbsp;京ICP证030173号</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

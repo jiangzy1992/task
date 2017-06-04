@@ -1,0 +1,47 @@
+.box{
+    width: 150px;
+    height: 200px;
+    display: inline-block;
+    margin: 5px;
+    padding: 8px;
+    background-color: #dafffc;
+    border: 1px solid #c16ae2;
+    box-shadow: 0 0 15px #000;
+    animation: changeColor 5s infinite;
+    -webkit-animation: changeColor 5s infinite;
+}
+
+.box:hover{
+    animation: rotate 3s;
+    -webkit-animation: rotate 3s;
+}
+/*设置变色动画效果*/
+@keyframes changeColor {
+    0% {background-color: #dafffc}
+    25% {background-color: #c4d9ff}
+    50% {background-color: #ffc2ec}
+    75% {background-color: #ffbab1}
+    100% {background-color: #dafffc}
+}
+/*兼容chrome*/
+@-webkit-keyframes changeColor {
+    0% {background-color: #dafffc}
+    25% {background-color: #c4d9ff}
+    50% {background-color: #ffc2ec}
+    75% {background-color: #ffbab1}
+    100% {background-color: #dafffc}
+}
+/*hover中的动画效果*/
+@keyframes rotate {
+    0% {-webkit-transform: rotate(0deg); background-color: #dafffc}
+    33% {-webkit-transform: rotate(15deg); background-color: #c4d9ff}
+    66% {-webkit-transform: rotate(-15deg); background-color: #ffc2ec}
+    100% {-webkit-transform: rotate(0deg); background-color: #ffbab1}
+}
+/*兼容chrome*/
+@-webkit-keyframes rotate {
+    0% {-webkit-transform: rotate(0deg); background-color: #dafffc}
+    33% {-webkit-transform: rotate(15deg); background-color: #c4d9ff}
+    66% {-webkit-transform: rotate(-15deg); background-color: #ffc2ec}
+    100% {-webkit-transform: rotate(0deg); background-color: #ffbab1}
+}

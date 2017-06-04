@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<head>
+    <title>后台管理首页-新闻列表</title>
+    <!-- Bootstrap -->
+    <link href="view/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li role="presentation" class="active"><a href="#">后台管理</a></li>
+            <li role="presentation"><a href="#" id="listNews">新闻列表</a></li>
+            <li role="presentation"><a href="#" id="addNews">添加新闻</a></li>
+        </ul>
+    </div>
+    <div class="admin-content">
+        <div class="container">
+            <div class="pull-right">
+                <span class="badge badge-info">
+                    共<?php echo $cnt; ?> 条
+                    
+                </span>
+            </div>
+        </div>
+        <div class="container">
+            <table class="table table-hover">
+                <thead>
+                    <tr class="success">
+                        <th style="width:100px">序号</th>
+                        <th style="width:100px">新闻标题</th>
+                        <th>新闻内容</th>
+                        <th style="width:100px">新闻目录</th>
+                        <th style="width:100px">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach($list as $v) { ?>
+                        <tr>
+                            <td>
+                                <?php echo $v['id']; ?>
+                            </td>
+                            <td>
+                                <?php echo $v['newstitle']; ?>
+                            </td>
+                            <td>
+                                <?php echo $v['newscontent']; ?>
+                            </td>
+                            <td>
+                                <?php echo $v['cat']; ?>
+                            </td>
+                            <td>
+                                <a href="javascript:doDel(<?php echo $v['id']; ?>)">删除</a>
+                                <a href="edit.php?id=<?php echo $v['id']; ?>">修改</a>
+                            </td>
+                        </tr>
+                        <?php } ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <footer>
+            <p>&copy; Thank you!</p>
+        </footer>
+    </div>
+    <!--/.fluid-container-->
+    <script src="view/js/jquery.min.js"></script>
+    <script type="text/javascript" src="view/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="view/js/index.js"></script>
+</body>
+
+</html>

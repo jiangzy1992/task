@@ -1,0 +1,14 @@
+/*重构*/
+
+.s-nav-ctner .nav-small em{
+    width: auto;
+}
+
+.s-nav-ctner .nav-warpper .rebate-icon{
+    display: none;
+}
+
+.s-content{
+    width: 811px;
+    height: 318px;
+}

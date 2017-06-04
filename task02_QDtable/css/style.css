@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0f7893;
+}
+.container{
+    width: 710px;
+    height: auto;
+    margin: 10px auto;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background-color: #fff;
+}
+/*整个表格，设置边框合并，边框颜色*/
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #cccccc;
+
+}
+/*设置字体大小，行高*/
+td{
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.borderWhite{
+    border: 1px solid #ffffff;
+}
+/*新教员注册文字样式*/
+#titleInfo{
+    font-size: 18px;
+    font-weight: bold;
+}
+/*取消a标签下划线*/
+a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+/*返回文字的样式还原*/
+.return{
+    text-decoration: underline;
+    margin: 0;
+}
+/*返回文字鼠标覆盖*/
+.return:hover{
+    color: #ff0000;
+}
+/*表头文字颜色*/
+strong{
+    color: #02349a;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px;
+}
+/*表头背景颜色*/
+.title{
+    background-color: #eeeeee;
+}
+/*红色字体*/
+.fontRed{
+    color: #ff0000;
+}
+/*蓝色字体*/
+.fontBlue{
+    color: #0000ff;
+}
+/*边框右边距*/
+input[type='text']{
+    margin-right: 10px;
+}
+/*两个下拉菜单成一行*/
+select{
+    display: inline;
+}
+/*提交按钮样式*/
+#submit{
+     width: 80px;
+}
+/*copyright样式居中*/
+#copyright{
+    font-size: 12px;
+    color: #333;
+}

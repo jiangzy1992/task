@@ -1,0 +1,92 @@
+@charset "utf-8";
+/*全局字体样式*/
+body{
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+/*取消无序列表的基本样式*/
+ul li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/*容器*/
+.container1{
+    width: 100%;
+}
+/*登录模块*/
+#login{
+    background: #f8f8f8;
+    line-height: 50px;
+    font-size: 17px;
+    margin-right: 20px;
+}
+/*导航栏*/
+.navbar{
+    margin-bottom: 0;
+    border-bottom-left-radius: 0;
+}
+/*左侧导航栏*/
+#leftMenu{
+    height: 93%;
+    /*float: left;*/
+    background: #e7e7e7;
+    position: absolute;
+    padding: 0;
+    margin-left: 15px;
+}
+/*左侧导航栏*/
+#leftMenu ul{
+    /*float: left;*/
+    padding: 0;
+}
+
+#leftMenu ul li{
+    /*float: left;*/
+    position: relative;
+}
+
+#leftMenu ul li a{
+    height: 45px;
+    /*float: left;*/
+    display: block;
+    line-height: 45px;
+    text-indent: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #565656;
+    border-top: 1px solid #ccc;
+    /*border-bottom: 0;*/
+}
+
+#leftMenu ul li a:hover{
+    background: #ccc;
+}
+
+#leftMenu .list1{
+    background: url("../images/ic_grid.png") no-repeat 15px center;
+}
+
+#leftMenu .list2{
+    background: url("../images/ic_user.png") no-repeat 15px center;
+}
+
+#leftMenu .list3{
+    background: url("../images/ic_chats.png") no-repeat 15px center;
+}
+
+#leftMenu ul li .menu_list{
+    font-size: 14px;
+    background: #f8f8f8;
+}
+/*主体部分的标题*/
+.title{
+    padding-bottom: 7px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+/*重构栅格*/
+.col-md-offset-3{
+    margin-left: 20%;
+}
+

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+
+html {
+    color: #333;
+    background: #f1f1f1;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+}
+
+body {
+    background: #f8f8f8;
+}
+
+.container {
+    width: 375px;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+header {
+    background: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+    height: 44px;
+    width: 627px;
+    padding: 0;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+header .header-logo {
+    background: url(../images/baidulogo.png) no-repeat 0 50%;
+    -webkit-background-size: 18px 20px;
+    -moz-background-size: 18px 20px;
+    -ms-background-size: 18px 20px;
+    background-size: 18px 20px;
+    padding-left: 22px;
+    display: inline-block;
+    line-height: 44px;
+    height: 44px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.content {
+    font-size: 20px;
+    background: #f8f8f8;
+}
+
+.form-inline input {
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.form-group {
+    margin-top: 25px;
+}
+
+.btn-primary {
+    margin-top: 20px;
+    height: 48px;
+    width: 100%;
+    font-size: 20px;
+}

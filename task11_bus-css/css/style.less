@@ -1,0 +1,175 @@
+@charset "UTF-8"
+//定义样式
+@white: #ffffff;
+@green: #3e914b;
+@red: #f83300;
+@lighten-green: #b7d550;
+@darken-green: #597b6b;
+//定义基本设置
+.base-style (@width: 100%, @height: auto) {
+  width: @width;
+  height: @height;
+  margin: 0;
+  padding: 0;
+}
+
+//定义字体
+.base-font(@size: 12px, @color: @darken-green, @weight: bold) {
+  font-weight: @weight;
+  font-size: @size;
+  color: @color;
+  text-align: center;
+}
+
+//导航样式
+.nav-li(@size, @left) {
+  .base-style(@size+1, 100px);
+  .base-font();
+  font-size: @size;
+  margin-left: @left;
+  float: left;
+  display: inline;
+  word-wrap: break-word;
+  word-break: normal;
+}
+
+body {
+  font: 12px arial;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  .base-style(900px);
+  position: relative;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+
+.bar {
+  .base-style(100%, 12px);
+  background-color: @green;
+}
+
+//本站名字（标题部分）
+.title {
+  .base-style;
+  position: relative;
+  p:nth-child(1) {
+    .base-font(60px, @darken-green, 900);
+    margin: 0 auto;
+  }
+  p:nth-child(2) {
+    .base-font(25px);
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+}
+
+//信息部分
+.content {
+  .base-style();
+  position: relative;
+}
+
+.con {
+  .base-style();
+  div {
+    display: inline-block;
+  }
+}
+
+//左侧信息部分
+.con-message {
+  .base-style(20%, 160px);
+  position: relative;
+  background-color: @darken-green;
+  div {
+    display: inline-block;
+  }
+  .bus-company {
+    .base-style(45px, 56px);
+    margin: 0 15px;
+    .base-font(18px, @lighten-green, 900);
+  }
+  .bus-number {
+    .base-style(75px, 56px);
+    .base-font(45px, @white, 900)
+  }
+  .bus-next {
+    .base-style(150px, 28px);
+    .base-font(22px, @red, 900);
+    margin-left: 15px;
+  }
+  .bus-price {
+    .base-style(190px, 50px);
+    .base-font(12px, @lighten-green);
+    position: relative;
+    -webkit-transform: scale(0.75);
+    text-align: left;
+    margin-left: 7px;
+    .price1:before {
+      content: '';
+      height: 0;
+      width: 0;
+      position: absolute;
+      border: 5px solid @lighten-green;
+      border-radius: 50%;
+      z-index: 2;
+      left: -13px;
+      top: 14px;
+    }
+    .price3:before {
+      content: '';
+      height: 0;
+      width: 0;
+      position: absolute;
+      border: 5px solid @lighten-green;
+      border-radius: 50%;
+      z-index: 2;
+      left: -13px;
+      top: 40px;
+    }
+    .price2 {
+      margin-left: 18px;
+    }
+    .price4 {
+      margin-left: 15px;
+    }
+  }
+  .bus-end {
+    .base-style(165px, 30px);
+    .base-font(12px, @lighten-green, 900);
+    margin-left: 20px;
+    text-align: left;
+  }
+}
+
+//站点导航
+.con-nav {
+  .base-style(80%);
+  background-color: @lighten-green;
+  position: absolute;
+  ul {
+    .base-style(100%, 160px);
+    overflow: hidden;
+    list-style: none;
+    //对目前站名称变红
+     .active {
+      color: @red !important;
+    }
+  }
+  //根据每一个导航信息数量不同调整间距
+  .nav1 li{
+    .nav-li(23px, 10px);
+  }
+  .nav2 li{
+    .nav-li(20px, 2px);
+  }
+  .nav3 li{
+    .nav-li(23px, 4px);
+  }
+  .nav4 li{
+    .nav-li(23px,13px);
+  }
+}
